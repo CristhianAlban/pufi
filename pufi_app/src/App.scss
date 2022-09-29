@@ -47,6 +47,16 @@ $anchoTotal: 100Vw;
         padding: 10%;
     } 
 }
+.navigationB{
+    display: grid;
+    grid-template-columns: 100%;
+    font-size: large;
+    width: 50%;
+    div{
+        width: 100%;
+        padding: 10%;
+    } 
+}
 .nav-bar{
     position: fixed;
     z-index: 1;

@@ -3,7 +3,7 @@ import './App.css';
 import { Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import ShopProduct from './components/ShopProduct/ShopProduct';
-import NavBar from './components/NavBar/NavBar';
+import NavBarShop from './components/NavBar/NavBarShop';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <Route exact path="/" component={Home} />
       <Route path="/product/:name">
-        <NavBar/>
+        <NavBarShop/>
         <ShopProduct/>
         <Footer/>
       </Route>
