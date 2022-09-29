@@ -1,16 +1,31 @@
 import React, {Component} from "react"
 //import {connect} from 'react-redux'
-import image from '../../images/image1.jpg'
+
+import NavBar from "../NavBar/NavBar"
+import ControlledCarousel from "../Carousel/Carousel"
+import RainCard from "../Products/Rain"
+import PuffCard from "../Products/Puff"
+import CartCard from "../Products/Cart"
+import NapCard from "../Products/Nap"
+import InstagramCard from "../Instagram/Instagram"
+import Newsletter from "../Newsletter/Newsletter"
+import Footer from "../Footer/Footer"
 
 
 export default class Home extends Component {
     
-    render(){
-        
+    render(){        
         return(
         <div className="box">
-            <h1>SITIO EN DESARROLLO</h1>
-            <img className="image" src={image} alt="imagen"></img>                       
+            <NavBar/>
+            <ControlledCarousel/>
+            <RainCard/>
+            <PuffCard/>
+            <CartCard/>
+            <NapCard/>
+            <InstagramCard/>
+            <Newsletter/>
+            <Footer/>                              
         </div>)
     }
 }
