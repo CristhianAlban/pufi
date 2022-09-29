@@ -9,31 +9,31 @@ export default class NavBar extends Component {
         return(
         <div className="nav-bar">
             <div className="logo">
+                <Link to="/">
                 <img src={logo} alt="logo"></img>
+                </Link>
             </div>
             <div className="navigation">
-                <Link to="/">
+                <a href="#puff">
                     <div className="br">
-                        <p>PUFI PUFF</p>
-                        
+                        <p>PUFI PUFF</p>                        
                     </div>                                                       
-                </Link>                
-                <Link to="/">
+                </a>                
+                <a href="#rain">
                     <div className="br">
-                        <p>PUFI RAIN</p>
-                        
+                        <p>PUFI RAIN</p>                        
                     </div>              
-                </Link>                
-                <Link to="/">
+                </a>                
+                <a href="#cart">
                     <div className="br">
                         <p>PUFI CART</p>                        
                     </div>                                    
-                </Link>
-                <Link to="/">
+                </a>
+                <a href="#nap">
                     <div>
                         <p>PUFI NAP</p>
                     </div>                
-                </Link>
+                </a>
             </div>
             <div className="acount">
                 <p className="br">MI CUENTA</p>

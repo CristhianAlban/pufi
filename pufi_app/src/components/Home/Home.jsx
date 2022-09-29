@@ -1,28 +1,55 @@
 import React, {Component} from "react"
-//import {connect} from 'react-redux'
-
+import {connect} from 'react-redux'
+import {closeModal} from "../../redux/actions"
 import NavBar from "../NavBar/NavBar"
 import ControlledCarousel from "../Carousel/Carousel"
-import RainCard from "../Products/Rain"
-import PuffCard from "../Products/Puff"
-import CartCard from "../Products/Cart"
-import NapCard from "../Products/Nap"
+import ProductL from "../Products/ProductL"
+import ProductR from "../Products/ProductR"
+import img1 from '../../images/sombrilla.jpg'
+import img2 from '../../images/puff.jpg'
+import img3 from '../../images/cart.jpg'
+import img4 from '../../images/nap.jpg'
 import InstagramCard from "../Instagram/Instagram"
 import Newsletter from "../Newsletter/Newsletter"
 import Footer from "../Footer/Footer"
+import Modal from "../Modal/Modal";
 
 
-export default class Home extends Component {
+
+export  class Home extends Component {
     
     render(){        
         return(
         <div className="box">
+            <Modal isOpen={this.props.isOpen} onClose={this.props.closeModal}>
+                <h1> hola soy el modal "reusable" y muestro el detalle de: {this.props.data.product}</h1>
+            </Modal>
             <NavBar/>
             <ControlledCarousel/>
-            <RainCard/>
-            <PuffCard/>
-            <CartCard/>
-            <NapCard/>
+            <section id="rain">
+                <ProductL
+                name="RAIN"
+                img={img1}
+                />
+            </section>
+            <section id="puff">
+                <ProductR
+                name="PUFF"
+                img={img2}
+                />
+            </section>
+            <section id="cart">
+                <ProductL
+                name="CART"
+                img={img3}
+                />
+            </section>
+            <section id="nap">
+                <ProductR
+                name="NAP"
+                img={img4}
+                />
+            </section>           
             <InstagramCard/>
             <Newsletter/>
             <Footer/>                              
@@ -30,11 +57,20 @@ export default class Home extends Component {
     }
 }
 
-// export const mapStateToProps = (state)=>{
+ export const mapStateToProps = (state)=>{
+    return{
+        isOpen:state.isOpen,
+        data:state.data
+    }
+    
 
-// }
 
-// export const mapDispatchToProps= (dispatch)=>{
-// }
+ }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Home)
+ export const mapDispatchToProps= (dispatch)=>{
+    return{        
+        closeModal: ()=> dispatch(closeModal()),
+    }
+ }
+
+ export default connect(mapStateToProps, mapDispatchToProps)(Home)

@@ -14,26 +14,26 @@ export default function Footer() {
                     <img src={logo} alt="logo"></img>
                 </div>
                 <div className='products_footer'>
-                    <Link to="/">
+                    <a href="#puff">
                         <div>
                             <p>PUFI PUFF</p>
                         </div>                                    
-                    </Link>
-                    <Link to="/">
+                    </a>
+                    <a href="#rain">
                         <div>
                             <p>PUFI RAIN</p>
                         </div>                
-                    </Link>
-                    <Link to="/">
+                    </a>
+                    <a href="#cart">
                         <div>
                             <p>PUFI CART</p>
                         </div>                                    
-                    </Link>
-                    <Link to="/">
+                    </a>
+                    <a href="#nap">
                         <div>
                             <p>PUFI NAP</p>
                         </div>                
-                    </Link>
+                    </a>
                 </div>
                 <div className='about'>
                     <Link to="/">
