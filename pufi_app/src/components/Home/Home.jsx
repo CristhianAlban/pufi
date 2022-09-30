@@ -22,7 +22,7 @@ export  class Home extends Component {
         return(
         <div className="box">
             <Modal isOpen={this.props.isOpen} onClose={this.props.closeModal}>
-                <h1> hola soy el modal "reusable" y muestro el detalle de: {this.props.data.product}</h1>
+                <h1> hola soy eun componente modal "reusable" y muestro el detalle de: {this.props.data.product}</h1>
             </Modal>
             <NavBar/>
             <ControlledCarousel/>
