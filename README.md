@@ -9,5 +9,6 @@ npm start
 
 
 o puede ir directamente al deploy :
+https://main.d1qmr4i1pjfbe0.amplifyapp.com/
 
 
