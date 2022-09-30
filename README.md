@@ -10,7 +10,7 @@ npm i
 npm start
 
 
-o puede ir directamente al deploy :
-https://main.d1qmr4i1pjfbe0.amplifyapp.com/
+o puede ir directamente al deploy:
+https://main.d3tmq121w8bnhy.amplifyapp.com/
 
 
