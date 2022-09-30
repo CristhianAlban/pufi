@@ -1,5 +1,8 @@
 
 $anchoTotal: 100Vw;
+body{
+    font-family:'Courier New', Courier, monospace;
+}
 
 .app{
     width: 100%;
@@ -52,6 +55,7 @@ $anchoTotal: 100Vw;
     grid-template-columns: 100%;
     font-size: large;
     width: 50%;
+    text-align: center;
     div{
         width: 100%;
         padding: 10%;
@@ -131,6 +135,8 @@ section[id]{
     font-weight: bold;
     font-size: small;
     box-shadow: 0px 0px 10px rgb(117, 117, 117);
+    margin-top: 80px;
+    height: 270px;
     a{
         color: black;
         text-decoration: none;
@@ -286,3 +292,63 @@ section[id]{
     background-color: #990101;
     border: 1px solid #990101;
 }
+.box_instagram{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h6{
+        color: gray;
+    }
+    p{
+        font-weight: bold;
+    }
+}
+.box_fotos{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 602px;
+        
+    img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        padding: 2px;              
+    }
+}
+
+.form{
+    width: 26rem;
+    border: 2px solid black;
+    display: flex;
+    .input_email{
+        border: none;
+        width: 92%;        
+    }
+    .input_email:focus{
+        outline-color: transparent;
+        outline-width: 0ch;
+    }
+    .input_email::placeholder{
+        color:black;
+    }
+   
+    button{
+        border: none;
+        background: transparent;
+        img{
+            width: 1.5rem;
+        }
+    }
+}
+.shop{
+    margin-top: 100px;
+    height: calc(100vh - 455px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

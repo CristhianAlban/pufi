@@ -1,9 +1,10 @@
-import{OPEN_MODAL, CLOSE_MODAL}from "../constants";
+import{OPEN_MODAL, CLOSE_MODAL, GET_PRODUC}from "../constants";
 
 const initialState = {
     data:{
         product:""
     },
+    name:"",
     isOpen:false
 }
 function rootReducer(state = initialState, action) {
@@ -20,6 +21,11 @@ function rootReducer(state = initialState, action) {
                 data:action.payload,
                 isOpen: false
             };
+        case GET_PRODUC:
+            return{
+                ...state,
+                name:action.payload
+            }
         default:
             return state;    
     }
